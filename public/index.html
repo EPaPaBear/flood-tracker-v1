@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignIn | SignUp</title>
+  <link rel="stylesheet" href="nicepage.css" media="screen">
+  <link rel="stylesheet" href="SignIn_SignUp.css" media="screen">
+  <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 4.18.5, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script> -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Flood Tracker",
+		"logo": "images/rain_icn.png"
+  }</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="SignIn_SignUp">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+
+</head>
+
+<body class="u-body u-xl-mode" data-lang="en">
+  <header class="u-clearfix u-header u-header" id="sec-3bb4" hidden=true>
+      <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+      <a href="https://nicepage.com" class="u-image u-logo u-opacity u-opacity-70 u-image-1" data-image-width="74" data-image-height="74">
+        <img src="images/rain_icn.png" class="u-logo-image u-logo-image-1">
+      </a>
+      <nav class="nav-bar u-align-center u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-custom-font u-heading-font u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base u-text-hover-palette-1-light-1 u-text-palette-5-dark-1" href="Weather.html" style="padding: 10px 20px;">Weather</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base u-text-hover-palette-1-light-1 u-text-palette-5-dark-1" href="Map.html" style="padding: 10px 20px;">Map</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base u-text-hover-palette-1-light-1 u-text-palette-5-dark-1" href="Flood-Reports.html" style="padding: 10px 20px;">Flood Reports</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base u-text-hover-palette-1-light-1 u-text-palette-5-dark-1" href="Emergency-Services.html" style="padding: 10px 20px;">Emergency Services</a>
+</li></ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Weather.html">Weather</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Map.html">Map</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Flood-Reports.html">Flood Reports</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Emergency-Services.html">Emergency Services</a>
+</li></ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+      <a href="https://nicepage.com/one-page-template" class="log-out-btn u-border-2 u-border-hover-palette-2-base u-border-palette-2-base u-btn u-btn-round u-button-style u-hover-palette-2-base u-none u-radius-10 u-btn-1">Log out</a>
+    </div></header>
+  <section class="u-clearfix u-section-1" id="sec-5a6f">
+    <div class="u-align-left u-clearfix u-sheet u-sheet-1">
+      <div class="u-expanded-width u-tab-links-align-center u-tabs u-tabs-1">
+        <ul class="u-tab-list u-unstyled" role="tablist">
+          <li class="u-tab-item" role="presentation">
+            <a class="active u-button-style u-custom-font u-heading-font u-tab-link u-tab-link-1" id="link-tab-d591" href="#tab-d591" role="tab" aria-controls="tab-d591" aria-selected="true">Login</a>
+          </li>
+          <li class="u-tab-item" role="presentation">
+            <a class="u-button-style u-custom-font u-heading-font u-tab-link u-tab-link-2" id="link-tab-de3e" href="#tab-de3e" role="tab" aria-controls="tab-de3e" aria-selected="false">Register<br>
+            </a>
+          </li>
+        </ul>
+        <div class="u-tab-content">
+          <div class="u-align-left u-container-style u-tab-active u-tab-pane" id="tab-d591" role="tabpanel" aria-labelledby="link-tab-d591">
+            <div class="u-container-layout u-container-layout-1">
+              <div class="u-align-center u-form u-form-1">
+                <form action="https://forms.nicepagesrv.com/Form/Process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form-1" style="padding: 10px;">
+                  <div class="u-form-email u-form-group">
+                    <label for="l-email" class="u-label">Email*</label>
+                    <input type="email" placeholder="Enter your email" id="l-email" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                  </div>
+                  <div class="u-form-group">
+                    <label for="l-pass" class="u-label">Password*</label>
+                    <input type="password" placeholder="Enter your password" id="l-pass" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                  </div>
+                  <div class="u-align-center u-form-group u-form-submit">
+                    <a id="loginBtn" class="u-btn u-btn-submit u-button-style u-btn-1">SIGN IN<br>
+                    </a>
+                    <input type="submit" value="submit" class="u-form-control-hidden">
+                  </div>
+                  <div class="u-form-send-message u-form-send-success"> Login Success </div>
+                  <div class="u-form-send-error u-form-send-message"> Unable to login. Please fix errors then try again. </div>
+                  <input type="hidden" value="" name="recaptchaResponse">
+                  <input type="hidden" name="formServices" value="722f4a3e677a43ba4585d0d83923f5b0">
+                </form>
+              </div>
+              <p class="u-text u-text-default u-text-1">Or</p>
+              <a id="signInBtn" class="u-border-none u-btn u-button-style u-grey-5 u-hover-palette-1-light-1 u-btn-2">
+                  <span class="u-file-icon u-icon">
+                      <img src="images/300221.png" alt="">
+                  </span>&nbsp;SIGN IN WITH GOOGLE
+              </a>
+            </div>
+          </div>
+          <div class="u-align-left u-container-style u-tab-pane" id="tab-de3e" role="tabpanel" aria-labelledby="link-tab-de3e">
+            <div class="u-container-layout u-container-layout-2">
+              <div class="u-form u-form-2">
+                <form action="https://forms.nicepagesrv.com/Form/Process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+                  <div class="u-form-group u-form-name">
+                    <label for="r-name" class="u-label">Name*</label>
+                    <input type="text" placeholder="Enter your Name" id="r-name" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                  </div>
+                  <div class="u-form-email u-form-group">
+                    <label for="r-email" class="u-label">Email*</label>
+                    <input type="email" placeholder="Enter a valid email address" id="r-email" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                  </div>
+                  <div class="u-form-group">
+                    <label for="r-pass" class="u-label">Password*</label>
+                    <input placeholder="Enter a password" rows="4" cols="50" id="r-pass" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" type="text">
+                  </div>
+                  <div class="u-align-center u-form-group u-form-submit">
+                    <a id="registerBtn" class="u-btn u-btn-submit u-button-style u-btn-3">REGISTER </a>
+                    <input type="submit" value="submit" class="u-form-control-hidden">
+                  </div>
+                  <div class="u-form-send-message u-form-send-success"> Registration Success </div>
+                  <div class="u-form-send-error u-form-send-message"> Unable to register. Please fix errors then try again. </div>
+                  <input type="hidden" value="" name="recaptchaResponse">
+                  <input type="hidden" name="formServices" value="722f4a3e677a43ba4585d0d83923f5b0">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <footer class="u-align-center u-clearfix u-footer u-white u-footer" id="sec-1a9d"><div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1"><span class="u-icon u-icon-1"><svg class="u-svg-content" viewBox="0 0 50 50" x="0px" y="0px" style="width: 1em; height: 1em;"><path style="fill:currentColor;" d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+              c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+              c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"></path></svg><img></span>&nbsp;Made with pure suffering.
+      </p>
+    </div>
+  </footer>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAv7mgwqdXjp0PuShQQbCw3zq7Fm486JCE",
+      authDomain: "flood-tracker-cd993.firebaseapp.com",
+      databaseURL: "https://flood-tracker-cd993-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "flood-tracker-cd993",
+      storageBucket: "flood-tracker-cd993.appspot.com",
+      messagingSenderId: "84609017509",
+      appId: "1:84609017509:web:48e043a5091d9221960f4c",
+      measurementId: "G-XFXMH5J7P0"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    const auth = getAuth();
+    const provider = new GoogleAuthProvider();
+
+    const signInBtn = document.getElementById('signInBtn');
+
+    // login credentials
+    const lemail = document.getElementById('l-email').value;
+    const lpass = document.getElementById('l-pass').value;
+    const loginBtn = document.getElementById('loginBtn');
+
+    // Registration credentials
+    const rname = document.getElementById('r-name').value;
+    const remail = document.getElementById('r-email').value;
+    const rpass = document.getElementById('r-pass').value;
+    const registerBtn = document.getElementById('registerBtn');
+
+    // Google Sign In
+    signInBtn.onclick = () => signInWithPopup(auth, provider);
+    
+    auth.onAuthStateChanged(user => {
+        if(user){
+            // signed in
+            location.replace("Weather.html")
+        }});
+
+    // Register user
+    registerBtn.onclick = () => createUserWithEmailAndPassword(auth, remail, rpass)
+    .then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+      location.replace("Weather.html")
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode+": "+errorMessage);
+      alert(errorMessage);
+      // ..
+    });
+
+    // Sign in existing user
+    loginBtn.onclick = () => signInWithEmailAndPassword(auth, lemail, lpass)
+    .then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+      location.replace("Weather.html")
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode+": "+errorMessage);
+      alert(errorMessage);
+    });
+
+  </script>
+  
+</body>
+</html>
